@@ -1,0 +1,5 @@
+interface:
+  display_name: "SOP Framework"
+  short_description: "Project-neutral deterministic SOP routing"
+  brand_color: "#008C95"
+  default_prompt: "Use $sop to inspect the available project-neutral recipes."

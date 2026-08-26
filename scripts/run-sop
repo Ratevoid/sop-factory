@@ -1,0 +1,12 @@
+#!/bin/zsh
+set -euo pipefail
+
+PLUGIN_ROOT="${0:A:h:h}"
+SOP_AUTOMATION_ROOT="$PLUGIN_ROOT/runtime"
+SOP_MAIN="$SOP_AUTOMATION_ROOT/sop.py"
+if [[ ! -f "$SOP_MAIN" ]]; then
+  print -u2 "SOP_INSTALLATION_NOT_FOUND: expected bundled runtime/sop.py"
+  exit 127
+fi
+export PYTHONPATH="$SOP_AUTOMATION_ROOT"
+exec python3 "$SOP_MAIN" "$@"

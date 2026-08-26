@@ -1,0 +1,4 @@
+interface:
+  display_name: "Learning Closeout"
+  short_description: "Persist verified lessons before task completion"
+  default_prompt: "Use $learning-closeout to audit this task for errors, corrections, and reusable lessons before finalizing."
