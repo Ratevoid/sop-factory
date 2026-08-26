@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# SOP Factory runtime state (never commit project knowledge)
+.sop/
+*.sop-state.json
+sop-state.json
+.learning/
+learned-capability/
+
+# Project-specific injected knowledge (framework stays neutral)
+runtime/profiles/*.json
+runtime/contracts/*.json
+runtime/adapters/**/*.json
+runtime/models/*.json

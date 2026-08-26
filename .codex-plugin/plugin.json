@@ -1,0 +1,29 @@
+{
+  "name": "sop-factory-framework",
+  "version": "1.0.1",
+  "description": "Project-neutral deterministic SOP framework with empty knowledge extensions.",
+  "author": {
+    "name": "Ratevoid"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "SOP Framework",
+    "shortDescription": "Route work to deterministic recipes without bundled project knowledge.",
+    "longDescription": "Provides the complete SOP runtime, risk gates, evidence contracts, and empty Profile and Adapter extension surfaces.",
+    "developerName": "Ratevoid",
+    "category": "Productivity",
+    "capabilities": [
+      "Natural-language SOP routing",
+      "Project Profile injection",
+      "Deterministic recipe execution",
+      "Dry-run and atomic write gates",
+      "Framework package auditing",
+      "Verified learning closeout"
+    ],
+    "defaultPrompt": [
+      "Inspect the available project-neutral SOP recipes.",
+      "Validate the current project's locally supplied Profile.",
+      "Turn a repeatable operation into a verified recipe candidate."
+    ]
+  }
+}
