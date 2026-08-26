@@ -1,0 +1,26 @@
+{
+  "schema": "sop.framework-package-policy.v1",
+  "archive_root": "sop-factory-framework",
+  "include_files": [
+    "sop.py",
+    "sop.command",
+    "pyproject.toml",
+    "uv.lock"
+  ],
+  "include_globs": [
+    "sop_factory/**/*.py",
+    "tests/**/*.py",
+    "tests/fixtures/**/*"
+  ],
+  "exclude_parts": [
+    "__pycache__",
+    ".pytest_cache",
+    ".venv"
+  ],
+  "replacements": [],
+  "forbidden_terms": [],
+  "forbidden_regex": [
+    "/(?:Users|home)/[^\\s\\\"']+",
+    "[A-Za-z]:\\\\\\\\Users\\\\\\\\[^\\s\\\"']+"
+  ]
+}

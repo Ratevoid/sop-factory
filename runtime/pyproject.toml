@@ -1,0 +1,13 @@
+[project]
+name = "sop-factory"
+version = "0.1.0"
+description = "Project-neutral deterministic SOP toolbox"
+requires-python = ">=3.11"
+dependencies = ["pillow>=11.0"]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
