@@ -1,1 +1,1 @@
-<placeholder:README.md full content with badges and AI Agent section added>
+<placeholder:README.md full content>
