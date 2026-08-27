@@ -23,8 +23,9 @@ better method. The user must not need to request it.
 6. Read back every new item and run a narrow recall query that finds it.
 7. If no durable lesson qualifies, write `LESSON_DECISION:none|trigger=<signal>|reason=<specific boundary>|evidence=<checked evidence>` to the diary.
 
-Use only the configured governed public MemPalace MCP and its active governance policy. If it is
-unavailable, report that once and continue the main task without bypassing the guard.
+Use only the configured memory backend (any MCP-compatible memory system with an active
+governance policy). If no memory backend is configured, skip persistence and report that lessons
+were evaluated but not persisted; do not block the main task.
 
 ## Completion Gate
 
